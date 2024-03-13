@@ -1,5 +1,5 @@
 import { Book } from "./../types/book";
-import { mockBooks } from "@/mocks/books";
+import { mockBooks } from "@/mocks/books-mocked";
 
 export const getBooks = async (): Promise<Book[]> => {
   // await fakeWait(1);

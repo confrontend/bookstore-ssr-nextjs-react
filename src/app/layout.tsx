@@ -15,8 +15,6 @@ export default async function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const books = await getBooks();
-
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>

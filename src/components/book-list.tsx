@@ -1,5 +1,5 @@
 "use client";
-import { addBook, addBooks, deleteBook } from "@/store/slices/books-slice";
+import { addBooks, deleteBook } from "@/store/slices/books-slice";
 import { openEditBookModal } from "@/store/slices/ui-slice";
 
 import { RootState } from "@/store/store";

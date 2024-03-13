@@ -5,13 +5,8 @@ import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { RootState } from "@/store/store";
 
-import { Book } from "@/types/book";
 import { updateBook } from "@/store/slices/books-slice";
-import { closeEditBookModal, openEditBookModal } from "@/store/slices/ui-slice";
-
-interface BookEditModalProps {
-  book: Book; // The book to be edited
-}
+import { closeEditBookModal } from "@/store/slices/ui-slice";
 
 export const BookEditModal = () => {
   const dispatch = useDispatch();

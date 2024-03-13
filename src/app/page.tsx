@@ -16,15 +16,7 @@ export default async function Home() {
       <StoreProvider>
         <BookAddButton />
         <BookAddModal />
-        <BookEditModal
-          book={{
-            id: "",
-            name: "",
-            price: 0,
-            category: "",
-            description: "",
-          }}
-        />
+        <BookEditModal />
         <BookList books={books} />
       </StoreProvider>
     </main>

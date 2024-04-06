@@ -1,14 +1,16 @@
 // src/redux/store.ts
-import { configureStore } from "@reduxjs/toolkit";
+import { combineReducers, configureStore } from "@reduxjs/toolkit";
 import booksReducer from "./slices/books-slice";
 import uiReducer from "./slices/ui-slice";
 
+const rootReducer = combineReducers({
+  books: booksReducer,
+  ui: uiReducer,
+});
+
 export const makeStore = () =>
   configureStore({
-    reducer: {
-      books: booksReducer,
-      ui: uiReducer,
-    },
+    reducer: rootReducer,
   });
 
 export type AppStore = ReturnType<typeof makeStore>;
